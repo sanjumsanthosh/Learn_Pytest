@@ -2,7 +2,7 @@
 
 ### Package details
 
-A new package called cards is develped to write the unit tests. more details are available [Here]('cards_proj\README.md').
+A new package called cards is develped to write the unit tests. more details are available [Here](cards_proj/README.md).
 
 use `pip install <file-loc> ` to install the package
 
