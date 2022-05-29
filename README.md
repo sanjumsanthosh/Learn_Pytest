@@ -6,7 +6,7 @@
 
 ## Sessions
 
-1. [Chapter 1](Chapter 1/Chapter 1.md)
+1. [Chapter 1](Chapter%201/Chapter%201.md)
 
 ## Dependences
 
