@@ -15,6 +15,13 @@ use `pip install <file-loc> ` to install the package
 * Failing an assertion will give much more info on where the assertion failed and why
 * we can run test by calling function under `if __name__ == "__main__"`
 
+### Test alternative fail
+
+* Failure of test occures in case of an uncaught excepiton
+  * like assert used in above example
+  * can use `pytest.fail(msg)` for adding custom fail logic ( given in example test_alt_fail.py )
+  * or any other uncaught excepitons
+
 ## Best practices
 
 * Seperating unit test from the src as a seperte file like `Root/src` & `Root/tests`
