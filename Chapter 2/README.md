@@ -22,6 +22,10 @@ use `pip install <file-loc> ` to install the package
   * can use `pytest.fail(msg)` for adding custom fail logic ( given in example test_alt_fail.py )
   * or any other uncaught excepitons
 
+### Test assertion helper
+
+* A wrapper function to wrap upon a complecated assertion function
+
 ## Best practices
 
 * Seperating unit test from the src as a seperte file like `Root/src` & `Root/tests`
