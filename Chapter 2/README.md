@@ -10,6 +10,11 @@ use `pip install <file-loc> ` to install the package
 
 * Adding basic test cases to test the package we developed
 
+### Test cards fail
+
+* Failing an assertion will give much more info on where the assertion failed and why
+* we can run test by calling function under `if __name__ == "__main__"`
+
 ## Best practices
 
 * Seperating unit test from the src as a seperte file like `Root/src` & `Root/tests`
