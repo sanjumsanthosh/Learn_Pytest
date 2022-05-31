@@ -26,6 +26,16 @@ use `pip install <file-loc> ` to install the package
 
 * A wrapper function to wrap upon a complecated assertion function
 
+### Test experiment
+
+* trigger fail of db as required arguments not passed
+
+### Test excepiton
+
+* Capture error with `pytest.raises`
+* Capture more info with `as excepiton` and later assert using `excepiton.value`
+* Capturing error with regex
+
 ## Best practices
 
 * Seperating unit test from the src as a seperte file like `Root/src` & `Root/tests`

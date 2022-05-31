@@ -18,3 +18,7 @@
 
 * controlles the api cals for the cli interface
 * uses dataclass
+
+### db.py
+
+* class DB with initilization of db_path & db_file_prefix
