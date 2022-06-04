@@ -16,6 +16,7 @@
   * class : run once per test class
   * package : run once per package or directory
   * session : run once per session
+* Use conftest to specify larger scope
 
 ## Tips & tricks
 
