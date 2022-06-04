@@ -58,4 +58,10 @@ use `pip install <file-loc> ` to install the package
 
 * Seperating unit test from the src as a seperte file like `Root/src` & `Root/tests`
 * Seperate functional and unit test as functional test only break if overall function is changed.
-*
+* -vv command line flag shows even more inforamtion during test failures.
+
+## Tips and tricks
+
+* when using -k, we can build complex expressions with the help of an d, not , or and parentheses. Example
+  * -k "(dict or ids) and not TEstEquality"
+  * -k "equality and not equality_fail"
