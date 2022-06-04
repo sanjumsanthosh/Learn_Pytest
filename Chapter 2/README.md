@@ -40,6 +40,11 @@ use `pip install <file-loc> ` to install the package
 
 * Stucturing test into Arrange/Given - Act/when - Assert/Then format
 
+### Test classes
+
+* classes can be used to group together tests and run them at once
+* we can also inherit a test class with specific utilities for testing
+
 ## Best practices
 
 * Seperating unit test from the src as a seperte file like `Root/src` & `Root/tests`
