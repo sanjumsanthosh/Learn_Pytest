@@ -36,6 +36,10 @@ use `pip install <file-loc> ` to install the package
 * Capture more info with `as excepiton` and later assert using `excepiton.value`
 * Capturing error with regex
 
+### Test stucture
+
+* Stucturing test into Arrange/Given - Act/when - Assert/Then format
+
 ## Best practices
 
 * Seperating unit test from the src as a seperte file like `Root/src` & `Root/tests`
