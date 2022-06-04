@@ -45,6 +45,15 @@ use `pip install <file-loc> ` to install the package
 * classes can be used to group together tests and run them at once
 * we can also inherit a test class with specific utilities for testing
 
+### Running subset of tests
+
+* single test method : test_module::Test_class::test_method
+* all tests in a class : test_module::Test_class
+* singel test function : test_module::Test_function
+* all tests in a module : test_module
+* all test in a directory : pytest path
+* test matching a name pattern pytest -k pattern
+
 ## Best practices
 
 * Seperating unit test from the src as a seperte file like `Root/src` & `Root/tests`
