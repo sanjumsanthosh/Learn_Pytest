@@ -8,6 +8,7 @@
 
 1. [Chapter 1](Chapter%201/README.md)
 2. [Chapter 2](Chapter%202/README.md)
+3. [Chapter 3](Chapter%203/README.md)
 
 ## Dependences
 
