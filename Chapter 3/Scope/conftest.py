@@ -12,7 +12,7 @@ def db_scope(fixture_name: str, config: pytest.Config) -> str:
     return "session"
 
 
-# Using a hook to determine register the --funct-db argument
+# Using MultiFixtures hook to determine register the --funct-db argument
 def pytest_addoption(parser: pytest.Parser):
     parser.addoption(
         "--func-db",

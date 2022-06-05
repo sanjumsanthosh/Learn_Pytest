@@ -7,7 +7,7 @@ Tasks.__new__.__defaults__ = (None, None, False, None)
 
 
 def test_asdict():
-    """_asdict() should return a dictionary"""
+    """_asdict() should return MultiFixtures dictionary"""
     t_task = Tasks('Do something', 'okken', True, 21)
     t_dict = t_task._asdict()
     expected_data = {

@@ -7,7 +7,7 @@ import pytest
 def get_session_time():
     yield
     curr_time = time.localtime()
-    print(f'\n\nAll Tests completed at {time.strftime("%d %b %X", curr_time)}')
+    print(f'\n\nAll Tests completed at {time.strftime("%Scope %b %X", curr_time)}')
     print("---------------")
 
 
