@@ -11,6 +11,7 @@
 3. [Chapter 3](Chapter%203/README.md)
 4. [Chapter 4](Chapter%204/README.md)
 5. [Chapter 5](Chapter%205/README.md)
+6. [Chapter 6](Chapter%206/README.md)
 
 ## Dependences
 
