@@ -46,6 +46,32 @@ Markers are used to label or tag a test so that we can tell something about them
     ```
 * Custom markers can be called with -m flag
 
+### Marking files, classes & parameters
+
+* to mark entire test module add pytestmark attibute with the pytest.mark.mark-name. If you have multiple, u can give it as a list
+* Another way is to give a test class and give it as an anottation.
+* To specify mark in parameter you can give as below
+
+  ```
+  @pytest.mark.parametrize("start_state", [
+  "todo",
+  pytest.param("in prog", marks=pytest.mark.smoke),
+  "done"
+  ])
+  ```
+* You can also mark fixtures as below
+
+  ```
+  @pytest.fixture(params=[
+      "todo",
+      pytest.param("in prog", marks=pytest.mark.smoke),
+      "done"
+  ])
+  def start_state_fixture(request):
+      return request.param
+  ```
+* Can add multiple marker by using mulitple @pytest.mark.marker1 \n @pytest.mark.marker1 etc...
+
 ## Tips and tricks
 
 Some flage to help tests
