@@ -43,6 +43,10 @@
 ### autouse
 
 * autouse is a parameter defined in fixtures which asks it to run the fixture all the time. Like for instance print the time elapsed for each tests.
+
+### Renaming fixtures
+
+* we can use name argument of @pytest.fixtures anotation to rename the fixtures.
 * ## Tips & tricks
 * If the test result is "Fail", then its something wrong with the test function. But if its an "Error" then its something related to fixture.
 * you can use --setup-show command line flag to show details of when the fixture was setup and tore down.
