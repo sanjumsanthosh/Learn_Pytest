@@ -116,3 +116,5 @@ We can parse version using packaging library. packageing.version.parse
 dont missuse skip/skipif/xfail. always remember YAGNI (ya arent gonna need it). only build functions if nessesary
 
 Faker is a third party library which can be used to generate fake data
+
+Markers can have parameters which can be accessed with `.args` & `.kwargs` attributes
