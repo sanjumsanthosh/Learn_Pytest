@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Markers are used to label or tag a test so that we can tell something about them. like we can mark them with `@pytest.mark.slow` or `@pytest.mark.smoke` and run only those markers. 
+Markers are used to label or tag a test so that we can tell something about them. like we can mark them with `@pytest.mark.slow` or `@pytest.mark.smoke` and run only those markers.
 
 `@pytest.mark.parametrize` is one type of marker we used in chapter 5.
 
@@ -32,6 +32,19 @@ Markers are used to label or tag a test so that we can tell something about them
 * it runs anyway by default but we can set run=Fale to stop it.
 * raise parameter allows to pass exception type or tuple of exceptions
 * can give strict to signify if we need to be XPASS (strict false) or FAIL (strict true)
+
+### Selecting tests with custom markers
+
+* Custom markers are made with @pytest.mark.custom_marker_name
+* its also important and good to add these markers in pytest.ini file
+
+  * ```
+    [pytest]
+    markers=
+        smoke: ...
+        exception: ...
+    ```
+* Custom markers can be called with -m flag
 
 ## Tips and tricks
 
