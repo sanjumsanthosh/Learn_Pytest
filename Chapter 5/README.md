@@ -18,3 +18,8 @@ Parametrization helops to reuse one test function in may test cases to test more
 ### Parametrizing Functions
 
 * add parametres to the test definition using `@pytest.mark.parametrize(variables,values)`
+
+### Parametrizing Fixtures
+
+* Here the parametres are passed in fixtures as `@pytest.fixture(params=[...])`
+* and the funtion must have a request fixture which returns request.param
