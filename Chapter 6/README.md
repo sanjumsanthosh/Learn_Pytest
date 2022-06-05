@@ -22,9 +22,18 @@ Markers are used to label or tag a test so that we can tell something about them
 * skip tests given in @pytest.mark.skip(reason=None) anotation
 * sympolised as s in normal or SKIPPED in verbose mode
 
+### Skipping with pytest.mark.skipif
+
+* skip if condifition is true
+* if u need to run it anyway use xfail. Its most pbm used in cases where we have like muliple env, eg OS, and have different test for them.
+
 ## Tips and tricks
+
+Some flage to help tests
 
 * -r flag tells pytest to report reasons for all reasons in session
 * -f for failed tests
 * -E errros
 * -a for all except passed
+
+We can parse version using packaging library. packageing.version.parse
