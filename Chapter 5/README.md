@@ -39,4 +39,17 @@ Parametrization helops to reuse one test function in may test cases to test more
   * we could parametrization based on command-lien flag as metafunc.config.getopeions(flag) is possible and we can add a --excessive flag or --quick flag to monify the parametres
   * can be based on the presesnce of other parameters.
   * parametrize more that one value like
-    * metafunc.parametrize("planet,moon",[(v1,m1),(v2,m2)...]
+    * metafunc.parametrize("planet,moon",[(v1,m1),(v2,m2)..]
+
+### using keywords to Select Test Cases
+
+we use -k to select test cases. some examples are listed below
+
+* `pytest -v -k todo` : run all of the todo cases
+* `pytest -v -k "todo and not (play or create)"` - eleimiate the test cases with play or create
+* `pytest -v "test_func_param.py::test_finish"` - running single test with all params
+* `pytest -v "test_func_param.py::test_finish[write a book-done]"` - a single param test case
+
+## Tips & tricks
+
+* when using -k its better to enclose in quotes as dashes, brackets and spaces can mess with the command shell
