@@ -1,5 +1,3 @@
----
-
 # Chapter 5  - Parametrization
 
 ## Introduction
@@ -16,3 +14,7 @@ Parametrization helops to reuse one test function in may test cases to test more
 
 * using 3 different functions
 * using a loop to go the the options ... but finally only one funciton. and if one fail we cannot identify which one was the culprit
+
+### Parametrizing Functions
+
+* add parametres to the test definition using `@pytest.mark.parametrize(variables,values)`
