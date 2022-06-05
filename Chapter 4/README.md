@@ -37,4 +37,22 @@ In the previous chapter we learnt about fixtures and how to use them. This chapt
   * capfdbinary - captures file descriptors binary
   * caplog - captures output written with the logger package
 
+### MonkeyPath
+
+monkey patch can be used to dynamically modify test classes during runtime. It can be used to take over part of the runtime environment of the application ocde and replace eithe rinput dependencies or output dependencies wit  objeceets or variables, python search path or current direcotry. its like a mini version of mockeing. Some of the function are:
+
+* setattr/delattr - sets/deletes an attribute
+* setitem/delitem - sets/deletes a dictionary entry
+* setenv/delenv - sets/deletes an environment variable
+* syspath_prepend - prepends path to sys.path
+* chdir - changes the current working directory
+
+Arguments (target, name, value, raising=True)
+
+* raising parameter tells whether or not to raise an exception if the item doesn't already exist
+* setenv has prepend argument is used to set value of env as value + prepend + old-value
+
+
 ## Tips & tricks
+
+* its a good idea to make the code easy for testing ... like in this case there is an env variable to pass the directory through which makes our life much more simple.
