@@ -27,6 +27,12 @@ Markers are used to label or tag a test so that we can tell something about them
 * skip if condifition is true
 * if u need to run it anyway use xfail. Its most pbm used in cases where we have like muliple env, eg OS, and have different test for them.
 
+### Expecting tests to fail with pytest.mark.xfail
+
+* it runs anyway by default but we can set run=Fale to stop it.
+* raise parameter allows to pass exception type or tuple of exceptions
+* can give strict to signify if we need to be XPASS (strict false) or FAIL (strict true)
+
 ## Tips and tricks
 
 Some flage to help tests
@@ -37,3 +43,5 @@ Some flage to help tests
 * -a for all except passed
 
 We can parse version using packaging library. packageing.version.parse
+
+dont missuse skip/skipif/xfail. always remember YAGNI (ya arent gonna need it). only build functions if nessesary
