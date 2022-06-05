@@ -93,6 +93,11 @@ Markers are used to label or tag a test so that we can tell something about them
   ```
 * This error is issued in collection time.. not run time. So it will get the feedback that something is wrong faster.
 
+### Combining Markers with Fixtures
+
+* To pass in dynamic arguents to fixtures we can use custom markers with arguments
+* these dynamic arguments though markers can be fetched by fixtues using `request.node.get_closest_marker(marker-name)` from which we can get the arguments and loop though the data.
+
 ## Tips and tricks
 
 Some flage to help tests
@@ -105,3 +110,5 @@ Some flage to help tests
 We can parse version using packaging library. packageing.version.parse
 
 dont missuse skip/skipif/xfail. always remember YAGNI (ya arent gonna need it). only build functions if nessesary
+
+Faker is a third party library which can be used to generate fake data
