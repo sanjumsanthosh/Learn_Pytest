@@ -52,6 +52,18 @@ Arguments (target, name, value, raising=True)
 * raising parameter tells whether or not to raise an exception if the item doesn't already exist
 * setenv has prepend argument is used to set value of env as value + prepend + old-value
 
+### Remaining builtin functions
+
+* capfd, capfdbinary, capsysbinary - variants of capsys with file descriptors an /or binary output
+* caplog - used for python's logging system
+* cache - store and retrieve values across pytest runs. like --last-failed, --failed-first, and similar flags
+* doctest_namespace - used for pytest to run doctest style tests
+* pytestconfig - get access to configuration values, pluginmanager, and plugin hooks
+* record_property, record_testsuite_property - Used to add extre]a properties to the test or test suite. Especially useful for adding data to an XML report to be used by continuous integration tools.
+* recwarn - test warning messages
+* request - provide info on the execution test functions. Most commnly used during fixture parametrization
+* pytester, testdir - used to provide a temp test directory to aid in running and testing plugins.
+* tmpdir, tmpdir_factory - similar to tmp_path & tmp_path_factory but returns py.path.local obj
 
 ## Tips & tricks
 
