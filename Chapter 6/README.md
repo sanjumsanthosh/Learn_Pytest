@@ -72,6 +72,17 @@ Markers are used to label or tag a test so that we can tell something about them
   ```
 * Can add multiple marker by using mulitple @pytest.mark.marker1 \n @pytest.mark.marker1 etc...
 
+### Using and , or , not and parentheses with Markers
+
+* -m and - includes both
+  * finish and exceptions
+* -m and not - include one but not other
+  * finish and not exception
+* -m ( a or b) and ( not c) - include a or b but dont include c
+  * (exception or smoke) and (not finish)
+* -m smoke -k "not TestFinish" - run the smoke test not part of TestFinish
+  * NOTE : -k accepts partial input
+
 ## Tips and tricks
 
 Some flage to help tests
