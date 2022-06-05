@@ -83,6 +83,16 @@ Markers are used to label or tag a test so that we can tell something about them
 * -m smoke -k "not TestFinish" - run the smoke test not part of TestFinish
   * NOTE : -k accepts partial input
 
+### Being Strict with Markers
+
+* include flag --strict-markers will prevent unregisterd markers from running
+* can also add this config permenantly in pytest.ini as
+  ```
+  addopts=
+      --strict-markers
+  ```
+* This error is issued in collection time.. not run time. So it will get the feedback that something is wrong faster.
+
 ## Tips and tricks
 
 Some flage to help tests
