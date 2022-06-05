@@ -98,6 +98,10 @@ Markers are used to label or tag a test so that we can tell something about them
 * To pass in dynamic arguents to fixtures we can use custom markers with arguments
 * these dynamic arguments though markers can be fetched by fixtues using `request.node.get_closest_marker(marker-name)` from which we can get the arguments and loop though the data.
 
+### Listing all Markers
+
+* to list all markser available use `pytest --markers`
+
 ## Tips and tricks
 
 Some flage to help tests
