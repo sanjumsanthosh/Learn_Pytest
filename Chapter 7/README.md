@@ -21,3 +21,7 @@
 * Start with a happy path is better because
   * makes thinking abt the other criteria pretty easy
   * we must hurry and test the happy path
+
+### Writing a Test Stratergy
+
+Event with a quick summary , its easy to forget the detaisl once we are in the thick of testing. So its best to write a testing strartergy down so to reffer later
