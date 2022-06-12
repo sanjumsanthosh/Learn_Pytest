@@ -15,3 +15,9 @@
 ### Evauating the  features to test
 
 * its generatlly good to prioritze the functions for testings. Recent > core > Risk  Problematic > Expertise
+
+### Creatign Test Cases
+
+* Start with a happy path is better because
+  * makes thinking abt the other criteria pretty easy
+  * we must hurry and test the happy path
