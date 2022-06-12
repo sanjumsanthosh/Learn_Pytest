@@ -12,4 +12,4 @@ in project cards:
 
 * as CLI is thin we can move almost all testing to API
 * Testing cli can be achieved by seeing if api mapping is good
-* As database layer is iso
+* As database layer is isolated, we can add sybsystem testing at the at layer if we feel its nessesary.
