@@ -1,4 +1,4 @@
-# Considering Software archetecture
+# Considering Software architecture
 
 If the software under test is designed as apython package with lotsof submodules, we can still test at the CLI level or we can zoom a bin into the modules. so during this we must consider the following
 
@@ -12,4 +12,4 @@ in project cards:
 
 * as CLI is thin we can move almost all testing to API
 * Testing cli can be achieved by seeing if api mapping is good
-* As database layer is isolated, we can add sybsystem testing at the at layer if we feel its nessesary.
+* As database layer is iso

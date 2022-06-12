@@ -11,4 +11,7 @@
 ### Considering softwre architecture
 
 * Testing stratergy fully depends on software archetecture. like which level to test, and how each modules are implemented
-*
+
+### Evauating the  features to test
+
+* its generatlly good to prioritze the functions for testings. Recent > core > Risk  Problematic > Expertise
