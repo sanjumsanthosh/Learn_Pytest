@@ -7,3 +7,8 @@
 ### Determining Test Scope
 
 * Test scope can be determined by asing a series of questions like is security a concern?, should we focus on performance ? , Would loading time become a problem ? or do we need input validation ?
+
+### Considering softwre architecture
+
+* Testing stratergy fully depends on software archetecture. like which level to test, and how each modules are implemented
+*
