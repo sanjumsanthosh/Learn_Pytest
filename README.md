@@ -13,6 +13,10 @@
 5. [Chapter 5](Chapter%205/README.md)
 6. [Chapter 6](Chapter%206/README.md)
 
+#### Working with projects
+
+7. [Chapter 7](Chapter%207/README.md)
+
 ## Dependences
 
 * pytest
