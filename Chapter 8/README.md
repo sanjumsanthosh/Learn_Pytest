@@ -24,3 +24,10 @@
   * pytest is supported in pyproject.toml
 * setup.cfg : more like .ini file.
   * here .cfg parser is different than .ini file parser so debuggin will be an issue
+
+### Determining a root directory & config file
+
+* looks for the config file in the directory or regess down the tree until one is find and made the rootDir.
+* root directory is the relative root of test node ids
+* even if we dont have any config data, its best to keep an empty pytest.ini file at top. It can prevent some delays
+* Once done it will print out the rootdir and config files.
