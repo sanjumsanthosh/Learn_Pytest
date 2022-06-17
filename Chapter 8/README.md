@@ -15,3 +15,12 @@
   * addopts : additional runtime params e.g. --strict-markers
   * testpaths : the root directory of test... can help to speed up startup time
   * markers: defines the markers with definition. eg marker1:definition1
+
+### Using tox.ini, pyproject.toml or setup.cfg
+
+* tox.ini : identical to pytest.ini. only diff is the [tox] session
+* pyproject.toml : Used for packaging python projects
+  * however peotry & filt uses it for project settings
+  * pytest is supported in pyproject.toml
+* setup.cfg : more like .ini file.
+  * here .cfg parser is different than .ini file parser so debuggin will be an issue
