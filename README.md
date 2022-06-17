@@ -16,6 +16,7 @@
 #### Working with projects
 
 7. [Chapter 7](Chapter%207/README.md)
+8. [Chapter 8](Chapter%208/README.md)
 
 ## Dependences
 
