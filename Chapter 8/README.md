@@ -36,3 +36,9 @@
 
 * we can define conftest.py at vaious levels.like if 2 independent test need to share some fixtures we can use a common config at parent folder.
 * it would be a good ida to have a single conftest.py file. it may otherwise cause confution on the location of a fixture. otherwise we can use -v
+
+### Avoiding test file name collision
+
+* __init__.py file can be used in pytest to allow to use fuplicate test names.
+* so for each directory adding an init.py will forego the presence of same tests.
+* Duplicated file names is a confusing error
