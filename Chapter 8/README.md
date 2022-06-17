@@ -31,3 +31,8 @@
 * root directory is the relative root of test node ids
 * even if we dont have any config data, its best to keep an empty pytest.ini file at top. It can prevent some delays
 * Once done it will print out the rootdir and config files.
+
+### Sharing local fixtures and hook functions with conftest.py
+
+* we can define conftest.py at vaious levels.like if 2 independent test need to share some fixtures we can use a common config at parent folder.
+* it would be a good ida to have a single conftest.py file. it may otherwise cause confution on the location of a fixture. otherwise we can use -v
