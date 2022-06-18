@@ -38,3 +38,14 @@ source =
 
 * use cov-report=html or coverage html to generate html report
 * The report htmlcov/ is placed in the directory where the test is run
+
+### Excluding code from coverage
+
+* exclude some lines from being tested
+* example if(__name__=="__main__") blocks
+* for ignoring we can use `#pragma: no cover`. eg
+* ```
+  if __name__ == "__main__": #pragma: no cover
+      main()
+  ```
+* ️ ***Beware that never add tests just to make the coverage 100%***  🚀️
