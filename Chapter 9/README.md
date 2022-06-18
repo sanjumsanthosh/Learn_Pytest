@@ -49,3 +49,13 @@ source =
       main()
   ```
 * ️ ***Beware that never add tests just to make the coverage 100%***  🚀️
+
+### Running coverage on tests
+
+* adding test directory on our coverage report like
+  * pytest --cov=cards --cov=. --cov-report=html
+  * pytest --cov=cards --cov=test_dir test
+* Why?
+  * To find test with duplicate names, as sometimes only one will be executed
+  * we forgot all the function names to make it unique
+  * can help to fix unused or dead code inside fixtures
