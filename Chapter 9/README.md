@@ -65,3 +65,10 @@ source =
 * can pass a directory with --cov=ch9/some_code or even a parent directory
 * why?
   * this can help in paying attention to group of files instead of a single package
+
+### Running coverage on a single file
+
+* single file applications are called ***scripts*** and often not packaged or deployed.
+* we can specify the single file in --cov without the .py extension for testing the coverage
+* we dont need to import pytest, we only need to add them if we are testing to add like markers for example
+* example : `pytest --cov=single_file  --cov-report=html .\single_file.py`
