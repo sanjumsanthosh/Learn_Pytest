@@ -59,3 +59,9 @@ source =
   * To find test with duplicate names, as sometimes only one will be executed
   * we forgot all the function names to make it unique
   * can help to fix unused or dead code inside fixtures
+
+### Running coverage on a directory
+
+* can pass a directory with --cov=ch9/some_code or even a parent directory
+* why?
+  * this can help in paying attention to group of files instead of a single package
