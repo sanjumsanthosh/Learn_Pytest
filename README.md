@@ -17,7 +17,10 @@
 
 7. [Chapter 7](Chapter%207/README.md)
 8. [Chapter 8](Chapter%208/README.md)
+9. [Chapter 9](Chapter%209/README.md)
 
 ## Dependences
 
 * pytest
+* coverage
+* pytest-cov

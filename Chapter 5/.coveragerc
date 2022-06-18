@@ -1,0 +1,4 @@
+[paths]
+source =
+    ..\bopytest2-code\code\cards_proj\src\cards
+    *\site-packages\cards
