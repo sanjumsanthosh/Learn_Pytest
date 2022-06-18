@@ -33,3 +33,8 @@ source =
   * pytest --cov=cards --cov-report=term-missing ch7
   * coverage report --show-missing
 * even if we run pytest we can get report by coverage report
+
+### Generating HTML Report
+
+* use cov-report=html or coverage html to generate html report
+* The report htmlcov/ is placed in the directory where the test is run
