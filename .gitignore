@@ -1,3 +1,4 @@
 .*/.pytest_cache/
 /venv/
 /bopytest2-code/.*
+.coverage
