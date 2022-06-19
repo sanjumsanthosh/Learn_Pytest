@@ -66,6 +66,18 @@ Continuous integration reefers to the practice of merging all developers code ch
   * in `.coveragerc` including `src`will work with local & for the for other CI it will look for `.tox` folder
   * `tox -c .\tox_coverage.ini -e python3.10`
 
+### Specifying a minimum coverage level
+
+* baseline coverage percent to flag any slips in coverage. This is done with the `--cov-fail-under` flag
+
+```
+...
+commands = pytest --cov=cards --cov=tests --cov=tests --cov-fail-under=100
+```
+
+* in tox -e flag can be used to run one specific tox environment
+
+
 ## Tips & Tricks
 
 * you can run a custom `tox -c tox_mulitple_pythons.ini`
