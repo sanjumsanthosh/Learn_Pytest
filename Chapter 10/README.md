@@ -31,3 +31,7 @@ We will be using unittest.mock python standard library for mocking. It is shippe
 * By default a mock can accept any arguments so its very flexible by default
 * Mock drift can occure when you are mocking changes and test doesnot.
 * Mock drift can be cured using autospec
+* why?
+  * Misspellings
+  * Adding / removing parameters and forgetting to change
+  * changing a method name during refactoring & forgetting to change
