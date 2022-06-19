@@ -41,3 +41,8 @@ We will be using unittest.mock python standard library for mocking. It is shippe
 * Instead of returing values we can see if the functions are called correctly.
 * in many cases like adding cards we can expect a definit answer.
 * To make sure its called correctly we could use `assert_called_with(...)`
+
+### creating error conditions
+
+* if we are expecting an error condition, we can use mock object `side_effect `attribute to specify it
+* When using mocks keep in mind that we are no longer testing behaviour, but the implementation.
