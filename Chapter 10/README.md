@@ -46,3 +46,8 @@ We will be using unittest.mock python standard library for mocking. It is shippe
 
 * if we are expecting an error condition, we can use mock object `side_effect `attribute to specify it
 * When using mocks keep in mind that we are no longer testing behaviour, but the implementation.
+
+### Testing at muliple layers to avoid mocking
+
+* While testing the CLI, we could also use the API to complete the functional testing instead of mocking.
+* The mixed layer approch will thus test hte expected behaviour and reduces the change of having a filure due to refactoring
