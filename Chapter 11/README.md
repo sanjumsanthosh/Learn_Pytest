@@ -92,29 +92,34 @@ commands = pytest --cov=cards --cov=tests --cov=tests --cov-fail-under=100
 
   #### Understanding GITHUB action yaml file
 * name : CI --> name can be anything
-* on:[push, pull_request]
+* on:[push, pull_request] --> wokr on which all operations
 * jobs:
 
   * build:
-    * runs-on: ubuntu-latest
+    * runs-on: ubuntu-latest --> runs on ubuntu but other os are available
     * stratergy:
 
       * matrix:
-        * pythonn:["3.7", 3.8"...]
-    * steps:
-    * uses: actions/checkout@v2
-    * name: setup python
+        * pythonn:["3.7", 3.8"...] --> all python versions to run
+    * steps: --> list all the steps
 
-      * uses: action/setup-python@v2
-      * with:
-        * python-version :${{ matrix.python }}
-    * name: Install Tox & any other packages
+      * uses: actions/checkout@v2  --> github action whcih checks out the repo so rest of the workflow can access it
+      * name: setup python
 
-      * run: pip install tox
-    * name: RUn tox
+        * uses: action/setup-python@v2 --> github action to configure python
+        * with:
+          * python-version :${{ matrix.python }} -> with the matrix value
+      * name: Install Tox & any other packages
 
-      * run: tox -e py
+        * run: pip install tox --> install tox
+      * name: RUn tox
+
+        * run: tox -e py --> run tox. here -e py will select the correct version of python specified in our tox.ini
 
 ## Tips & Tricks
 
 * you can run a custom `tox -c tox_mulitple_pythons.ini`
+* use
+* defaults:
+  * run:
+    * working-directory: Chapter 11/Cards_proj ---> to set directory
