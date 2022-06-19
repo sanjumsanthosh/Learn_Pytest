@@ -9,3 +9,8 @@ We will be using unittest.mock python standard library for mocking. It is shippe
 * Want to keep all the real logic off the cards api.
 * In cli.py, the rest of the card system are accessed using cards import
 * most of the db workes using a context manager that created cards.cardDB obj
+
+### Testing with typer
+
+* Typer provides a testing intreface. with it , we can call our aplication without using subprocess.run
+* Create a helper function called cards_cli for generating result for the cli
