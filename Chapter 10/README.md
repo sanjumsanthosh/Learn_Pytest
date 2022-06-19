@@ -14,3 +14,9 @@ We will be using unittest.mock python standard library for mocking. It is shippe
 
 * Typer provides a testing intreface. with it , we can call our aplication without using subprocess.run
 * Create a helper function called cards_cli for generating result for the cli
+
+### Mocking an Attribute
+
+* There are several **patch** methods within the mock package. here we will be using mock.patch.object
+* mock.patch.object() uses a context manager within a **with** block returns a mock obj that is cleaned up after the **with** block
+* with mock objects, we can set attribute values, return values for callable , and event look at how callables are called.
