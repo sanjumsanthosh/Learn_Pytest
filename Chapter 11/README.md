@@ -54,6 +54,18 @@ Continuous integration reefers to the practice of merging all developers code ch
     * isolated_build = True
     * skip_missing_interpreters = True -> with it set to true, tox will skip in case of missing versions
 
+### Running tox environments in Parallel
+
+* We can run in parallel by adding -p flag
+* `tox -c .\tox_mulitple_pythons.ini -p`
+
+### Adding a coverage Report to tox
+
+* To add a coverage report we need to include pytest-cov to deps which will add all the dependent packages
+* When using coverage with tox it is good to set up `.coveragerc` file to let coverage know ehich source should be considerd
+  * in `.coveragerc` including `src`will work with local & for the for other CI it will look for `.tox` folder
+  * `tox -c .\tox_coverage.ini -e python3.10`
+
 ## Tips & Tricks
 
 * you can run a custom `tox -c tox_mulitple_pythons.ini`
