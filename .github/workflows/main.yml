@@ -2,6 +2,10 @@ name: CI
 
 on: [push, pull_request]
 
+defaults:
+ run:
+  working-directory: ./Chapter\ 11/Cards_project
+
 jobs:
   build:
 
@@ -16,8 +20,6 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python }}
-      - name: Change to Chapter 11
-        run:  cd Chapter\ 11/Cards_project
       - name: print working dir
         run:  pwd
       - name: Install tox and any other packages
