@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - name: Change to Chapter 11
-        run:  cd "Chapter 11/Cards_project/"
+        run:  cd Chapter\ 11/Cards_project
       - name: print working dir
         run:  pwd
       - name: Install tox and any other packages
