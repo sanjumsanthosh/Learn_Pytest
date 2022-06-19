@@ -20,3 +20,8 @@ We will be using unittest.mock python standard library for mocking. It is shippe
 * There are several **patch** methods within the mock package. here we will be using mock.patch.object
 * mock.patch.object() uses a context manager within a **with** block returns a mock obj that is cleaned up after the **with** block
 * with mock objects, we can set attribute values, return values for callable , and event look at how callables are called.
+
+### Mocking a class & methods
+
+* cards_db() is a context manager which returs a cards.cardsDB obj. and on the returning obj path is called.
+* as card_db is always needed we can create a fixture
