@@ -63,3 +63,7 @@ Some examples of plugings:
 * respone, betamax - mocking requests
 
 other examples are pytest-rabbitmq, pytest-solr, pytest-elasticsearch & pytest-redis
+
+### Review notes
+
+* Adding funcitonalities that makes testing easier is par tof "design for testability" and can be used to allow testing at muliple levels or testing at a higher level.
