@@ -77,6 +77,11 @@ commands = pytest --cov=cards --cov=tests --cov=tests --cov-fail-under=100
 
 * in tox -e flag can be used to run one specific tox environment
 
+### Passing pytest parameters though tox
+
+* To pass additional arguments we just need to add `{posargs}` to our pytest command
+* To pass to pytest add -- between the tox arguments and pytes arguments.
+  * `tox -c tox_posargs.ini -e python3.10 -- -k test_version --no-cov`
 
 ## Tips & Tricks
 
