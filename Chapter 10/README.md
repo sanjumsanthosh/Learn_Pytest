@@ -51,3 +51,15 @@ We will be using unittest.mock python standard library for mocking. It is shippe
 
 * While testing the CLI, we could also use the API to complete the functional testing instead of mocking.
 * The mixed layer approch will thus test hte expected behaviour and reduces the change of having a filure due to refactoring
+
+### Using plugins to assist mocking
+
+Some examples of plugings:
+
+* pytest-mock - general purpose plugin that provides mocker fixure that act as a thin wrappr to unittest.mock.
+  * one advantage is that it cleas up after itself
+* pytest-postgresql, pytest-mongo, pytest-mysql, pytest-dynamodb - mockign db
+* pytest-httpserver - HTTP server mock
+* respone, betamax - mocking requests
+
+other examples are pytest-rabbitmq, pytest-solr, pytest-elasticsearch & pytest-redis
