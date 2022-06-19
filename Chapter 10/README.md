@@ -35,3 +35,9 @@ We will be using unittest.mock python standard library for mocking. It is shippe
   * Misspellings
   * Adding / removing parameters and forgetting to change
   * changing a method name during refactoring & forgetting to change
+
+### Making sure functions are called correctly
+
+* Instead of returing values we can see if the functions are called correctly.
+* in many cases like adding cards we can expect a definit answer.
+* To make sure its called correctly we could use `assert_called_with(...)`
