@@ -33,3 +33,32 @@ def test_config_with_fixture(mock_cards_db: unittest.mock.MagicMock):
     mock_cards_db.path.return_value = mock_config_path
     config_result = card_cli("config")
     assert config_result == mock_config_path
+
+
+@pytest.fixture()
+def mock_cards_db_norm():
+    with unittest.mock.patch.object(cards, "CardsDB") as mockCardsDB:
+        yield mockCardsDB.return_value
+
+
+def test_config_bad(mock_cards_db_norm: unittest.mock.MagicMock):
+    mock_config_path = "./foo"
+    mock_cards_db_norm.path.return_value = mock_config_path
+    mock_cards_db_norm.pat.return_value = mock_config_path
+    config_result = card_cli("config")
+    assert config_result == mock_config_path
+
+
+@pytest.fixture()
+def mock_cards_db_autospec():
+    with unittest.mock.patch.object(cards, "CardsDB", autospec=True) as mockCardsDB:
+        yield mockCardsDB.return_value
+
+
+@pytest.mark.skip()
+def test_config_bad_autospec(mock_cards_db_autospec: unittest.mock.MagicMock):
+    mock_config_path = "./foo"
+    mock_cards_db_autospec.path.return_value = mock_config_path
+    mock_cards_db_autospec.pat.return_value = mock_config_path
+    config_result = card_cli("config")
+    assert config_result == mock_config_path

@@ -25,3 +25,9 @@ We will be using unittest.mock python standard library for mocking. It is shippe
 
 * cards_db() is a context manager which returs a cards.cardsDB obj. and on the returning obj path is called.
 * as card_db is always needed we can create a fixture
+
+### Keeping Mock & Implementation in sync with autospec
+
+* By default a mock can accept any arguments so its very flexible by default
+* Mock drift can occure when you are mocking changes and test doesnot.
+* Mock drift can be cured using autospec
