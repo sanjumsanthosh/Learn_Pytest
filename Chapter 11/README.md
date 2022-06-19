@@ -22,3 +22,22 @@ Continuous integration reefers to the practice of merging all developers code ch
   * pip install you pacakge
   * runs the test
 * after the run it will give a summary of hwo they all did
+
+### Setting up tox
+
+* cards_proj
+  * pyproject.toml
+  * pytest.ini
+  * tox.ini
+    * src ...
+    * tests...
+* tox.ini file have following parameters
+  * [tox]
+    * **envlist = py310** --> shorthand to tell tox to run in python 3.10
+    * **isolated_build = True** --> for pyproject.toml we need this .. but optional in setup.py
+  * [testenv]
+    * **deps =** --> install both there tools for testing can also specify version
+      pytest == 6.2.4 -> can also specify version
+      faker
+    * **commands = pytest** --> tells tos to run pytest in each env
+* Build instructions in **pyproject.toml** file
