@@ -83,6 +83,38 @@ commands = pytest --cov=cards --cov=tests --cov=tests --cov-fail-under=100
 * To pass to pytest add -- between the tox arguments and pytes arguments.
   * `tox -c tox_posargs.ini -e python3.10 -- -k test_version --no-cov`
 
+### Running tox with Github actions
+
+* Github actions is a cloud-based CI system with natural CI options.
+* we can add a `workflow.yml` file to `.github/workflows/` at the top level of project
+
+  * here add it to -- *Chapter 11/Cards_project/.github/workflow/main.yml*
+
+  #### Understanding GITHUB action yaml file
+* name : CI --> name can be anything
+* on:[push, pull_request]
+* jobs:
+
+  * build:
+    * runs-on: ubuntu-latest
+    * stratergy:
+
+      * matrix:
+        * pythonn:["3.7", 3.8"...]
+    * steps:
+    * uses: actions/checkout@v2
+    * name: setup python
+
+      * uses: action/setup-python@v2
+      * with:
+        * python-version :${{ matrix.python }}
+    * name: Install Tox & any other packages
+
+      * run: pip install tox
+    * name: RUn tox
+
+      * run: tox -e py
+
 ## Tips & Tricks
 
 * you can run a custom `tox -c tox_mulitple_pythons.ini`
