@@ -10,3 +10,15 @@ Continuous integration reefers to the practice of merging all developers code ch
 * CI is a tool which build an drun tests all on their own, ususally triggered by an MR
 * This frequency makes it so that the code changes is smaller and reduces the chance of Merge conflicts
 * CI tools have the ability to merge automaticaly but usually merging is done manually after code reviews
+
+### Introducing tox
+
+* CI helps to run the complete test suits in muliple env. python as well as os
+* tox uses info from setup.py / pyproject.toml to create an installable distribution and looks in tox.ini for a list of environments.
+* for each it will
+  * create a virtual env in a .tox direcotry
+  * pip install some dependencies
+  * builds your packages
+  * pip install you pacakge
+  * runs the test
+* after the run it will give a summary of hwo they all did
