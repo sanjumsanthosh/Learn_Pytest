@@ -41,3 +41,7 @@ Continuous integration reefers to the practice of merging all developers code ch
       faker
     * **commands = pytest** --> tells tos to run pytest in each env
 * Build instructions in **pyproject.toml** file
+
+### Running tox
+
+* tox can be run by changing to the directory and executing tox
