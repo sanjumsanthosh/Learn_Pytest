@@ -45,3 +45,15 @@ Continuous integration reefers to the practice of merging all developers code ch
 ### Running tox
 
 * tox can be run by changing to the directory and executing tox
+
+### Testing multiple python versions
+
+* The following changes should be made to tox.ini file
+  * [tox]
+    * envlist = python3.7, python3.8, python3.9
+    * isolated_build = True
+    * skip_missing_interpreters = True -> with it set to true, tox will skip in case of missing versions
+
+## Tips & Tricks
+
+* you can run a custom `tox -c tox_mulitple_pythons.ini`
