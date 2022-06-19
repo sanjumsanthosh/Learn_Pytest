@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 defaults:
  run:
-  working-directory: ./Chapter\ 11/Cards_project
+  working-directory: Chapter\ 11/Cards_project
 
 jobs:
   build:
