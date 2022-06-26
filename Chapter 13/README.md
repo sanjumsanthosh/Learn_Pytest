@@ -44,3 +44,13 @@ Pytest includes a few command line flags that are useful for debugging like
 * run just the first failing test & stop after the failure --lf -x
 * run the same test over again with -l/--showlocals with short traceback
   * pytest --lf -x -l --tb=short
+
+### Debugging with pdb
+
+we can lauch pdb from pytest in few different ways
+
+* Adding a breakpoint()
+* using --pdb flag --> stop at the point of failure like assert
+* using --trace flag --> stop at beginning of test
+
+combining --lf & --trace works perfectly to identify issue
