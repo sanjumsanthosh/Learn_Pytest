@@ -31,3 +31,8 @@ in this case we could use capsys to capture output
 * if we move everying into seperate directories like src and test it wont work as it will give a no module named "hello" error
 * i.e. it doesnot know to look in src for hello.
 * generally it uses the sys.path to track which all places to look for so we could add it in pythonpath (v>7) else pytest-srcpaths (v 6.2.x)
+
+### Defining the python search path
+
+* python search path is a list of directories pthon stores in the sys.path variable. During import it looks thought the list of modules or packages matching the request imports. (./scrip_src/test_sys_path.py)
+* In the output script_src\tests & script_src\src are added by pytest.ini file
