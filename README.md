@@ -20,6 +20,7 @@
 9. [Chapter 9](Chapter%209/README.md)
 10. [Chapter 10](Chapter%2010/README.md)
 11. [Chapter 11](Chapter%2011/README.md)
+12. [Chapter 12](Chapter%2012/README.md)
 
 ## Dependences
 
