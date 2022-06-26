@@ -32,7 +32,15 @@ in this case we could use capsys to capture output
 * i.e. it doesnot know to look in src for hello.
 * generally it uses the sys.path to track which all places to look for so we could add it in pythonpath (v>7) else pytest-srcpaths (v 6.2.x)
 
-### Defining the python search path
+### Defining the python search path (./scrip_src/test_sys_path.py)
 
-* python search path is a list of directories pthon stores in the sys.path variable. During import it looks thought the list of modules or packages matching the request imports. (./scrip_src/test_sys_path.py)
+* python search path is a list of directories pthon stores in the sys.path variable. During import it looks thought the list of modules or packages matching the request imports.
 * In the output script_src\tests & script_src\src are added by pytest.ini file
+
+### Testing requirements.txt based applications (./app/)
+
+Unlike pacakged files which uses pyproject.toml, seuppy or setup.cfg file to package external dependencies.. we can also use requirements.txt file. 
+
+we can install the files using `pip install -r requirements.txt`
+
+for tox we can add `-rrequirements.txt` in deps under testenv
