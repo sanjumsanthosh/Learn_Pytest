@@ -19,3 +19,9 @@ To test a script we need some ways to run the file. Some options are
   * how to solve it? ass `skipsdist = true`
 
 To test larger scripts we need to split it into seperate test codes and into seperate directories.
+
+### Testing an importable python script
+
+we can make the scripts importable and move it inside a function. like with a main function and using `__name__ == __main__` to check it
+
+in this case we could use capsys to capture output
