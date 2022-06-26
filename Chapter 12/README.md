@@ -25,3 +25,9 @@ To test larger scripts we need to split it into seperate test codes and into sep
 we can make the scripts importable and move it inside a function. like with a main function and using `__name__ == __main__` to check it
 
 in this case we could use capsys to capture output
+
+### Separating code into src & tests directories
+
+* if we move everying into seperate directories like src and test it wont work as it will give a no module named "hello" error
+* i.e. it doesnot know to look in src for hello.
+* generally it uses the sys.path to track which all places to look for so we could add it in pythonpath (v>7) else pytest-srcpaths (v 6.2.x)
