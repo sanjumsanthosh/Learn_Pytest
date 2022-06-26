@@ -37,3 +37,10 @@ Pytest includes a few command line flags that are useful for debugging like
   * --pdb --> intefactive debugging session at point of failure
   * --trace --> starts the pdb source-code debugger immediately when running each tests
   * --pdbcls --> uses alternative pdb, like ipython's debugger
+
+### Re-Running Failed Tests
+
+* rerun last failed with no traceback --lf --tb=no
+* run just the first failing test & stop after the failure --lf -x
+* run the same test over again with -l/--showlocals with short traceback
+  * pytest --lf -x -l --tb=short
