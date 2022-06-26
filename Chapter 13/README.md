@@ -54,3 +54,9 @@ we can lauch pdb from pytest in few different ways
 * using --trace flag --> stop at beginning of test
 
 combining --lf & --trace works perfectly to identify issue
+
+### Combining pdb & tox
+
+arguments are passed to pytest though tox via tox's `{posargs}` feature
+
+like `tox -e py310 -- --pdb --no-cov`
